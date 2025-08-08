@@ -4,10 +4,9 @@ from pyrot13 import rot13
 
 
 def main() -> None:
-	x = sys.stdin.read()
-	y = rot13(x)
-	sys.stdout.write(y)
+    while chunk := sys.stdin.read(4096):
+        sys.stdout.write(rot13(chunk))
 
 
 if __name__ == "__main__":
-	main()
+    main()
