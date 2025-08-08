@@ -20,5 +20,5 @@ setup(
 		"Operating System :: OS Independent",
 		"License :: OSI Approved :: ISC License (ISCL)"
 	],
-	python_requires=">=3"
+	python_requires=">=3.8"
 )
