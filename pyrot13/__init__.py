@@ -10,4 +10,5 @@ _rot13 = str.maketrans(
 )
 
 def rot13(s: str) -> str:
+    """ rot13 returns a copy of s but each letter is rotated by 13 places. """
     return s.translate(_rot13)
